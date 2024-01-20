@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Translator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Translation service</h1>
+        <div>Enter the text you wish to translate, choose the language, and click Translate!</div>
+        <div>
+            <form method="POST">
+                <div class="form-group">
+                    <textarea name="text" cols="20" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="language">Language:</label>
+                    <select name="language" class="form-control">
+                        <option value="en">English</option>
+                        <option value="it">Italian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ru">Russian</option>
+                        <option value="de">German</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-success">Translate!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
